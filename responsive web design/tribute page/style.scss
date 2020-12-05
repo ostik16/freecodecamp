@@ -1,0 +1,42 @@
+#main{
+    padding: 1rem;
+    min-height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    font-size: larger;
+    
+    #title{
+        text-align: center;
+        font-weight: bold;
+        margin: 2rem 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    #img-div{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        
+        #image{
+            justify-self: center;
+            height: auto;
+            max-height: 651px;
+            width: 100%;
+            max-width: 425px;
+        }
+        #img-caption{
+            margin: 1rem;
+            max-width: 425px;
+            font-family: monospace;
+        }
+    }
+
+    #tribute-info{
+        text-align: justify;
+        margin: 5rem auto;
+        max-width: 1000px;
+    }
+
+    #source{
+        font-size: medium;
+    }
+}

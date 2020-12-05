@@ -1,0 +1,48 @@
+#main {
+  padding: 1rem;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: larger;
+}
+
+#main #title {
+  text-align: center;
+  font-weight: bold;
+  margin: 2rem 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#main #img-div {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main #img-div #image {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: auto;
+  max-height: 651px;
+  width: 100%;
+  max-width: 425px;
+}
+
+#main #img-div #img-caption {
+  margin: 1rem;
+  max-width: 425px;
+  font-family: monospace;
+}
+
+#main #tribute-info {
+  text-align: justify;
+  margin: 5rem auto;
+  max-width: 1000px;
+}
+
+#main #source {
+  font-size: medium;
+}
+/*# sourceMappingURL=style.css.map */
