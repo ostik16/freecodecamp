@@ -1,5 +1,5 @@
 #main {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(img1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@
   margin: 0 auto;
   padding: 2rem;
   max-width: 800px;
-  height: 100%;
+  min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -34,9 +34,15 @@
 
 #main #img-source {
   position: absolute;
-  bottom: 0px;
+  top: 0px;
   right: 0px;
   color: white;
   margin: 5px;
+}
+
+@media (max-width: 800px) {
+  #main #survey-form #name, #main #survey-form #number, #main #survey-form #email, #main #survey-form #dropdown {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
