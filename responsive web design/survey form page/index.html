@@ -1,36 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1 id="title">title</h1>
-    <p id="description">short explanation</p>
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="style.css">
+        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css' integrity='sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK' crossorigin='anonymous'>
+        <title>Survey form page</title>
+    </head>
+    <body>
+        <main id="main">
+            
+            <form action="" id="survey-form">
+                <h1 id="title">SLEEP</h1>
+                <p id="description">In this survey, we will be asking you about your sleeping habits.</p>
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" placeholder="Your full name" required>
+                <label id="email-label" for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                <label id="number-label" for="number">How many hours a day do you usually sleep?</label>
+                <input type="number" id="number" min=0 max=24 placeholder="8" required>
+                <label id="drop-label" for="dropdown">What kind of bed, do you sleep on.</label>
+                <select name="drop" id="dropdown">
+                    <option value="">Choose...</option>
+                    <option value="single">Single bed</option>
+                    <option value="double">Double bed</option>
+                    <option value="bunk">Loft/Bunk bed</option>
+                    <option value="sofa">Sofa-bed</option>
+                    <option value="no">No bed</option>
+                </select>
+                <div id="radios">
+                    Do you wake up fresh?<br>
+                    <label for="yes">
+                        <input id="yes" type="radio" name="fresh" value="yes">
+                        Yes
+                    </label><br>
+                    <label for="no">
+                        <input id="no" type="radio" name="fresh" value="no">
+                        No
+                    </label><br>
+                    <label for="sometimes">
+                        <input id="sometimes" type="radio" name="fresh" value="sometimes">
+                        Sometimes
+                    </label>
+                </div>
+                <div id="checkboxes">
+                    What routines you perform after waking up.<br>
+                    <label for="phone">
+                        <input id="phone" type="checkbox" name="routine" value="phone">
+                        I check my phone
+                    </label><br>
+                    <label for="teeth">
+                        <input id="teeth" type="checkbox" name="routine" value="teeth">
+                        I brush my teeth
+                    </label><br>
+                    <label for="shower">
+                        <input id="shower" type="checkbox" name="routine" value="shower">
+                        I have a shower
+                    </label><br>
+                    <label for="run">
+                        <input id="run" type="checkbox" name="routine" value="run">
+                        I go running
+                    </label><br>
+                </div>
+                <div id="textarea">
+                    If you had a dream, which you can remember and you would like to share it, you can do it here.
+                    <textarea name="txt" id="a" rows="5"></textarea>
+                </div>
+                <input type="submit" value="Send" id="submit">
+            </form>
+            <div id="img-source">
+                Photo by Matheus Bertelli from Pexels
+            </div>
+        </main>
 
-    <form action="" id="survey-form">
-        <label id="name-label" for="name">name</label>
-        <input type="text" id="name" placeholder="jmeno" required>
-        <label id="email-label" for="email">email</label>
-        <input type="email" id="email" name="email" placeholder="email" required>
-        <label id="number-label" for="number">number</label>
-        <input type="number" id="number" min=1 max=5 placeholder="123" required>
-        <select name="drop" id="dropdown">
-            <option value="a">a</option>
-            <option value="b">b</option>
-        </select>
-        <input type="radio" name="one" value="a">
-        <input type="radio" name="one" value="b">
-        <input type="checkbox" value="9">
-        <input type="checkbox" value="9">
-        <input type="checkbox" value="9">
-        <input type="checkbox" value="9">
-        <textarea name="txt" id="a" cols="30" rows="10"></textarea>
-        <input type="submit" value="a" id="submit">
-    </form>
-
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
+        <script src="app.js"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <script src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js' integrity='sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD' crossorigin='anonymous'></script>
+    </body>
 </html>

@@ -1,0 +1,42 @@
+#main {
+  height: 100vh;
+  background-image: url(img1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#main #title, #main #description {
+  text-align: center;
+}
+
+#main #name-label, #main #email-label, #main #number-label, #main #drop-label, #main #radios, #main #checkboxes, #main #textarea {
+  display: block;
+  margin-top: 1rem;
+}
+
+#main #survey-form {
+  color: white;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 800px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#main #survey-form textarea {
+  width: 100%;
+}
+
+#main #survey-form #name, #main #survey-form #number, #main #survey-form #email, #main #survey-form #dropdown {
+  width: 50%;
+}
+
+#main #img-source {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: white;
+  margin: 5px;
+}
+/*# sourceMappingURL=style.css.map */

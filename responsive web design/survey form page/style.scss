@@ -1,0 +1,40 @@
+#main{
+    height: 100vh;
+    background-image: url(img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    #title, #description{
+        text-align: center;
+        // margin: 1rem 0;
+    }
+
+    #name-label ,#email-label, #number-label, #drop-label, #radios, #checkboxes, #textarea{
+        display: block;
+        margin-top: 1rem;
+    }
+
+    #survey-form{
+        color: white;
+        margin: 0 auto;
+        padding: 2rem;
+        max-width: 800px;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+
+        textarea{
+            width: 100%;
+        }
+        #name, #number, #email, #dropdown{
+            width: 50%;
+        }
+    }
+    #img-source{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        color: white;
+        margin: 5px;
+    }
+}
